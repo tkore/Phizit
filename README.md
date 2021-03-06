@@ -9,6 +9,7 @@ This modpack comes with the following mods (more to be added in the future, prob
 - [Remember IP Damnit](https://www.nexusmods.com/valheim/mods/41) - to remember the last used IP address
 - [BepInEx configuration manager](https://github.com/BepInEx/BepInEx.ConfigurationManager) - for configuring mods in-game
 - [Nexus Update Check](https://www.nexusmods.com/valheim/mods/102) - to notify the user of updated versions of installed mods, if they have a Nexus ID configured
+- [Map Sync](https://www.nexusmods.com/valheim/mods/42)
 
 # Installing
 
