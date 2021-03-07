@@ -5,8 +5,10 @@ on: push
 jobs:
   notify:
     runs-on: ubuntu-latest
-    uses: Ilshidur/action-discord@master
-    env:
-      DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-    with:
-      args: '{{ EVENT_PAYLOAD.repository.full_name }} has been updated.'
+    steps:
+      - name: Notify
+        uses: Ilshidur/action-discord@master
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        with:
+          args: '{{ EVENT_PAYLOAD.repository.full_name }} has been updated.'
