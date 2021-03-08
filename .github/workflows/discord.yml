@@ -11,4 +11,4 @@ jobs:
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         with:
-          args: 'New changes: ${{ join(github.event.commits) }}'
+          args: 'join(github.event.commits.*.message, '', '')'
