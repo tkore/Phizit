@@ -11,4 +11,4 @@ jobs:
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         with:
-          args: '{{ EVENT_PAYLOAD.repository.full_name }} has been updated.'
+          args: 'New changes: ${{ join(EVENT_PAYLOAD.commits.\*.message, ", ") }}'
